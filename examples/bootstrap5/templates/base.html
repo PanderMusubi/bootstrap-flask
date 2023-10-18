@@ -1,4 +1,4 @@
-{% from 'bootstrap5/nav.html' import render_nav_item %}
+{% from 'bootstrap5/nav.html' import render_nav_item, render_colormode_item %}
 {% from 'bootstrap5/utils.html' import render_messages %}
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +42,7 @@
                 <li class="nav-item"><a class="nav-link" href="https://bootstrap-flask.readthedocs.io/" target="_blank">Documentation</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://github.com/helloflask/bootstrap-flask" target="_blank">GitHub</a></li>
+                {{ render_colormode_item() }}
             </ul>
         </div>
         </div>
